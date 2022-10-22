@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;800&display=swap');
+
 /*
 Cor principal: #2AD6DB
 Cor secundária: #008A8F
@@ -10,6 +12,7 @@ Cor de contraste: #DB6300
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 body, html{
@@ -55,6 +58,17 @@ section#login>aside#img{
 section#login>div#form{
     display: block;
     padding: 10px;
+}
+
+section#login>div#form>h1{
+    font-weight: 800;
+    color: #F24D18;
+    text-align: center;
+    padding-top: 10px;
+}
+
+section#login>div#form>p{
+    font-weight: 500;
 }
 
 /*
