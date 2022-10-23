@@ -8,26 +8,27 @@ Cor terciária: #0072AB
 Cor de contraste: #DB6300
 */
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
 
-body, html{
+body,
+html {
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to bottom, #007fbe 32%, #00FFBE 100%);
 }
 
-main{
+main {
     position: relative;
     width: 100vw;
     height: 100vh;
 }
 
-section#login{
+section#login {
     position: absolute;
     width: 300px;
     height: 550px;
@@ -38,7 +39,8 @@ section#login{
 
     background-color: white;
     box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.4);
-    overflow: hidden; /*Tudo o que passar da borda da Section login, será escondido*/
+    overflow: hidden;
+    /*Tudo o que passar da borda da Section login, será escondido*/
 
     /*Adicionar transição ao trocar de tamanho de tela*/
     transition: width 0.5s, height 0.5s;
@@ -47,7 +49,7 @@ section#login{
     transition-timing-function: ease;
 }
 
-section#login>aside#img{
+section#login>aside#img {
     display: block;
     background: #00FFBE url(../imagens/building.jpg) no-repeat;
     background-size: cover;
@@ -55,12 +57,12 @@ section#login>aside#img{
     height: 270px;
 }
 
-section#login>div#form{
+section#login>div#form {
     display: block;
     padding: 10px;
 }
 
-section#login>div#form>h1{
+section#login>div#form>h1 {
     font-weight: 800;
     font-size: 1.8em;
     color: #F24D18;
@@ -68,19 +70,19 @@ section#login>div#form>h1{
     margin: 0px 0px 5px 0px;
 }
 
-section#login>div#form>p{
+section#login>div#form>p {
     font-size: 0.9em;
     font-weight: 500;
     text-align: justify;
 }
 
-form > div.campo{
+form>div.campo {
     background-color: #F24D18;
     border-radius: 8px;
     margin: 6px 0px;
 }
 
-form > input[type=submit] {
+form>input[type=submit] {
     display: block;
     width: 100%;
     padding: 5px;
@@ -92,12 +94,12 @@ form > input[type=submit] {
     cursor: pointer;
 }
 
-form > input[type=submit]:hover {
+form>input[type=submit]:hover {
     background-color: white;
     color: #F24D18;
 }
 
-form>button.botao{
+form>button.botao {
     display: block;
     width: 100%;
     border-radius: 8px;
@@ -108,18 +110,18 @@ form>button.botao{
     cursor: pointer;
 }
 
-form>button.botao:hover{
+form>button.botao:hover {
     background-color: #F24D18;
 }
 
-form>button>a{
+form>button>a {
     display: block;
     text-decoration: none;
     color: #F24D18;
     font-weight: bold;
 }
 
-form>button>a:hover{
+form>button>a:hover {
     color: white;
 }
 
@@ -132,68 +134,72 @@ form>button>a:hover{
     *Grandes telas acima de 1200px
 */
 
-@media screen and (min-width: 768px) and (max-width: 992px){
-    body, html{
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body,
+    html {
         background-image: linear-gradient(to bottom, #007fbe 32%, #00FFBE 100%);
     }
 
-    section#login{
+    section#login {
         width: 75vw;
         height: 75vh;
     }
 
-    section#login>aside#img{
+    section#login>aside#img {
         float: left;
-        width:35%;
+        width: 35%;
         height: 100%;
     }
 
-    section#login>div#form{
+    section#login>div#form {
         float: right;
         width: 65%;
         height: 100%;
     }
 
-    section#login>div#form>h1{
+    section#login>div#form>h1 {
         margin: 15px 0px 15px 0px;
         font-size: 2em;
     }
-    
-    section#login>div#form>p{
+
+    section#login>div#form>p {
         font-size: 1.1em;
         font-weight: 500;
     }
 }
 
-@media screen and (min-width: 992px){
-    body, html{
+@media screen and (min-width: 992px) {
+
+    body,
+    html {
         background-image: linear-gradient(to bottom, #007fbe 32%, #00FFBE 100%);
     }
 
-    section#login{
+    section#login {
         width: 920px;
         height: 75vh;
     }
 
-    section#login>aside#img{
+    section#login>aside#img {
         float: right;
         background-position: bottom center;
         width: 50%;
         height: 100%;
     }
 
-    section#login>div#form{
+    section#login>div#form {
         float: left;
         width: 50%;
         height: 100%;
     }
 
-    section#login>div#form>h1{
+    section#login>div#form>h1 {
         margin: 20px 0px 20px 0px;
         font-size: 2.2em;
     }
-    
-    section#login>div#form>p{
+
+    section#login>div#form>p {
         font-size: 1.3em;
         font-weight: 500;
     }
