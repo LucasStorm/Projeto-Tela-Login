@@ -31,7 +31,7 @@ main {
 section#login {
     position: absolute;
     width: 300px;
-    height: 550px;
+    height: 560px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -74,6 +74,25 @@ section#login>div#form>p {
     font-size: 0.9em;
     font-weight: 500;
     text-align: justify;
+}
+
+form>div.campo>label>span{
+    color: white;
+    width: 40px;
+    font-size: 1.5em;
+    padding: 3px;
+    transform: translate(5px, 2px);
+}
+
+form>div.campo>input{
+    margin: 0px;
+    padding: 2px;
+    font-size: 1em;
+    background-color: white;
+    border: 1px solid #F24D18;
+    border-radius: 8px;
+    width: 84%;
+    transform: translateY(-4px);
 }
 
 form>div.campo {
@@ -159,13 +178,18 @@ form>button>a:hover {
     }
 
     section#login>div#form>h1 {
-        margin: 15px 0px 15px 0px;
+        margin: 15px 0px 35px 0px;
         font-size: 2em;
     }
 
     section#login>div#form>p {
         font-size: 1.1em;
+        margin-bottom: 35px;
         font-weight: 500;
+    }
+
+    form>button.botao {
+        margin-top: 45px;
     }
 }
 
@@ -195,12 +219,17 @@ form>button>a:hover {
     }
 
     section#login>div#form>h1 {
-        margin: 20px 0px 20px 0px;
+        margin: 15px 0px 35px 0px;
         font-size: 2.2em;
     }
 
     section#login>div#form>p {
         font-size: 1.3em;
         font-weight: 500;
+        margin-bottom: 35px;
+    }
+
+    form>button.botao {
+        margin-top: 45px;
     }
 }
